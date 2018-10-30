@@ -28,13 +28,13 @@ class Restaurant:NSObject, MKAnnotation {
         return _address
     }
     var result: String {
-       return _result
+        return _result
     }
     var inspectionType: String {
         return _inspectionType
     }
     var inspectionID: String {
-       return _inspectionID
+        return _inspectionID
     }
     var risk: UIColor {
         switch _risk {
@@ -43,7 +43,7 @@ class Restaurant:NSObject, MKAnnotation {
         case "RISK 2 (MEDIUM)":
             return UIColor(displayP3Red:1.0, green: 215.0/255, blue: 0.0, alpha: 1.0)
         case "RISK 3 (LOW)":
-           return UIColor(displayP3Red:0, green: 100.0/255, blue: 0.0, alpha: 1.0)
+            return UIColor(displayP3Red:0, green: 100.0/255, blue: 0.0, alpha: 1.0)
         default:
             return .brown
         }
@@ -115,5 +115,5 @@ class Restaurant:NSObject, MKAnnotation {
         mapItem.name = title
         return mapItem
     }
-
+    
 }

@@ -23,20 +23,29 @@ class RestaurantListViewController: UITableViewController {
         searchController.searchBar.placeholder = "Search Restaurants"
         navigationItem.searchController = searchController
         definesPresentationContext = true
+        
+        fetchTableData()
+    }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.title = "Restaurants"
+    }
+    
+    func fetchTableData() {
         chicagoRestaurantsService = ChicagoRestaurantsService()
         chicagoRestaurantsService.getChicagoRestaurants{ (chicagoRestaurants) in
-            guard let restaurants = chicagoRestaurants else{
-                // TODO: make an error view controller or alert
+            guard let restaurants = chicagoRestaurants else {
+                let alert = UIAlertController(title: "UIAlertController", message: "TryAgain", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "TryAgain", style: .default, handler: { _ in self.fetchTableData()}))
+                alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
                 return
             }
             self.restaurants = restaurants
             self.tableView.reloadData()
         }
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.title = "Restaurants"
+       
     }
     
     func searchBarIsEmpty() -> Bool {

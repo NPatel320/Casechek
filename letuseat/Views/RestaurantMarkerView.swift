@@ -18,7 +18,7 @@ class RestaurantMarkerView: MKMarkerAnnotationView {
             markerTintColor = restaurant.risk
             glyphImage = UIImage(named: restaurant.imageName)
             let mapButton = UIButton(frame: CGRect(origin: CGPoint.zero,
-                                            size: CGSize(width: 30, height: 30)))
+                                                   size: CGSize(width: 30, height: 30)))
             mapButton.setBackgroundImage(UIImage(named: "Maps-icon"), for: UIControlState())
             rightCalloutAccessoryView = mapButton
         }
