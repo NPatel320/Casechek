@@ -1,9 +1,9 @@
 //
 //  TwoLabelCell.swift
-//  Solstice Contacts
+//  letuseat
 //
-//  Created by Nilu on 2017-09-22.
-//  Copyright © 2017 Nirali. All rights reserved.
+//  Created by Nirali Patel on 10/30/18.
+//  Copyright © 2018 Nirali Patel. All rights reserved.
 //
 
 import UIKit
