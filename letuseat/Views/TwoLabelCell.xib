@@ -13,42 +13,42 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="twoLabelCell" rowHeight="81" id="KGk-i7-Jjw" customClass="TwoLabelCell" customModule="letuseat" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="TwoLabelCell" customModule="letuseat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="80.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="76.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Address:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvx-Rf-8eG">
-                        <rect key="frame" x="24" y="19" width="272" height="14"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fjj-u4-3Qd">
+                        <rect key="frame" x="8" y="19" width="288" height="21"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                        <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3in-Qc-dEf">
-                        <rect key="frame" x="24" y="41" width="272" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRG-wx-T8l">
+                        <rect key="frame" x="8" y="48" width="304" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="Uvx-Rf-8eG" secondAttribute="trailing" constant="8" id="5Bv-rE-RzA"/>
-                    <constraint firstItem="Uvx-Rf-8eG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="CkN-aQ-CQL"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="3in-Qc-dEf" secondAttribute="trailing" constant="8" id="Otd-eR-Gxa"/>
-                    <constraint firstItem="Uvx-Rf-8eG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="R8S-C8-URs"/>
-                    <constraint firstItem="3in-Qc-dEf" firstAttribute="leading" secondItem="Uvx-Rf-8eG" secondAttribute="leading" id="RvA-fi-xCj"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="3in-Qc-dEf" secondAttribute="bottom" constant="8" id="WqD-fB-OcF"/>
-                    <constraint firstItem="3in-Qc-dEf" firstAttribute="top" secondItem="Uvx-Rf-8eG" secondAttribute="bottom" constant="8" id="vmb-hO-ucc"/>
+                    <constraint firstItem="Fjj-u4-3Qd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="3lH-RK-Wan"/>
+                    <constraint firstAttribute="bottom" secondItem="sRG-wx-T8l" secondAttribute="bottom" constant="8" id="3vG-vW-JYv"/>
+                    <constraint firstItem="sRG-wx-T8l" firstAttribute="top" secondItem="Fjj-u4-3Qd" secondAttribute="bottom" constant="8" id="QV6-b4-GQU"/>
+                    <constraint firstItem="sRG-wx-T8l" firstAttribute="leading" secondItem="Fjj-u4-3Qd" secondAttribute="leading" id="Tbg-58-bP6"/>
+                    <constraint firstAttribute="trailing" secondItem="sRG-wx-T8l" secondAttribute="trailing" constant="8" id="Uhd-Ne-CiA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Fjj-u4-3Qd" secondAttribute="trailing" constant="8" id="nSR-z4-NYh"/>
+                    <constraint firstItem="sRG-wx-T8l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="rLc-Ty-4Cq"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="bottomLabel" destination="3in-Qc-dEf" id="Gfv-BU-CKI"/>
-                <outlet property="topLabel" destination="Uvx-Rf-8eG" id="QfV-ff-Zfu"/>
+                <outlet property="bottomLabel" destination="sRG-wx-T8l" id="VSJ-cp-gdh"/>
+                <outlet property="topLabel" destination="Fjj-u4-3Qd" id="gfl-E5-06P"/>
             </connections>
-            <point key="canvasLocation" x="34" y="114.5"/>
+            <point key="canvasLocation" x="34" y="156.5"/>
         </tableViewCell>
     </objects>
 </document>
