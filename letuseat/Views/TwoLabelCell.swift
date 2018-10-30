@@ -9,7 +9,7 @@
 import UIKit
 
 class TwoLabelCell: UITableViewCell {
-
+    
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var bottomLabel: UILabel!
     

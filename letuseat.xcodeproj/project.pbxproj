@@ -19,9 +19,9 @@
 		945628242183C51200E9A000 /* ChicagoRestaurantsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945628232183C51200E9A000 /* ChicagoRestaurantsService.swift */; };
 		945628262183E06200E9A000 /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945628252183E06200E9A000 /* RestaurantListViewController.swift */; };
 		945628282183E23B00E9A000 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945628272183E23B00E9A000 /* RestaurantCell.swift */; };
-		9456282A2184316F00E9A000 /* TwoLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945628292184316F00E9A000 /* TwoLabelCell.xib */; };
-		9456282C2184319E00E9A000 /* TwoLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9456282B2184319E00E9A000 /* TwoLabelCell.swift */; };
 		94853DB52186967800FFFEE1 /* RestaurantMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94853DB42186967800FFFEE1 /* RestaurantMarkerView.swift */; };
+		94D397272188807C00C70A6C /* TwoLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D397252188807C00C70A6C /* TwoLabelCell.swift */; };
+		94D397282188807C00C70A6C /* TwoLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94D397262188807C00C70A6C /* TwoLabelCell.xib */; };
 		A3062E426C1B653B56D62650 /* Pods_letuseatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A61428E4712B2691C7B447 /* Pods_letuseatTests.framework */; };
 		BB8B94B3EA9970199936774D /* Pods_letuseat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65A6CCA268FCEB9BE1A7ADA /* Pods_letuseat.framework */; };
 		F729F1518C0B9C3A1211042B /* Pods_letuseatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9F7F7CEBB6B9D6699030DF /* Pods_letuseatUITests.framework */; };
@@ -69,9 +69,9 @@
 		945628232183C51200E9A000 /* ChicagoRestaurantsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChicagoRestaurantsService.swift; sourceTree = "<group>"; };
 		945628252183E06200E9A000 /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 		945628272183E23B00E9A000 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
-		945628292184316F00E9A000 /* TwoLabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TwoLabelCell.xib; path = "../../../../Downloads/NiraliPatelSolstice/Solstice Contacts/Solstice Contacts/Views/TwoLabelCell.xib"; sourceTree = "<group>"; };
-		9456282B2184319E00E9A000 /* TwoLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLabelCell.swift; sourceTree = "<group>"; };
 		94853DB42186967800FFFEE1 /* RestaurantMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMarkerView.swift; sourceTree = "<group>"; };
+		94D397252188807C00C70A6C /* TwoLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLabelCell.swift; sourceTree = "<group>"; };
+		94D397262188807C00C70A6C /* TwoLabelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoLabelCell.xib; sourceTree = "<group>"; };
 		BF9F7F7CEBB6B9D6699030DF /* Pods_letuseatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_letuseatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65A6CCA268FCEB9BE1A7ADA /* Pods_letuseat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_letuseat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA87BF610864E22EBEE90190 /* Pods-letuseat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-letuseat.release.xcconfig"; path = "Pods/Target Support Files/Pods-letuseat/Pods-letuseat.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,7 +158,6 @@
 				94853DB62186AF4300FFFEE1 /* Services */,
 				9456281D2183919300E9A000 /* Models */,
 				945627EF21838DC300E9A000 /* AppDelegate.swift */,
-				945628292184316F00E9A000 /* TwoLabelCell.xib */,
 				945627F321838DC300E9A000 /* Main.storyboard */,
 				945627F621838DC300E9A000 /* Assets.xcassets */,
 				945627F821838DC300E9A000 /* LaunchScreen.storyboard */,
@@ -215,8 +214,9 @@
 			isa = PBXGroup;
 			children = (
 				94853DB42186967800FFFEE1 /* RestaurantMarkerView.swift */,
-				9456282B2184319E00E9A000 /* TwoLabelCell.swift */,
 				945628272183E23B00E9A000 /* RestaurantCell.swift */,
+				94D397252188807C00C70A6C /* TwoLabelCell.swift */,
+				94D397262188807C00C70A6C /* TwoLabelCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -335,7 +335,7 @@
 				945627FA21838DC300E9A000 /* LaunchScreen.storyboard in Resources */,
 				945627F721838DC300E9A000 /* Assets.xcassets in Resources */,
 				945627F521838DC300E9A000 /* Main.storyboard in Resources */,
-				9456282A2184316F00E9A000 /* TwoLabelCell.xib in Resources */,
+				94D397282188807C00C70A6C /* TwoLabelCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,11 +439,11 @@
 				945628262183E06200E9A000 /* RestaurantListViewController.swift in Sources */,
 				945627F221838DC300E9A000 /* DetailViewController.swift in Sources */,
 				945627F021838DC300E9A000 /* AppDelegate.swift in Sources */,
+				94D397272188807C00C70A6C /* TwoLabelCell.swift in Sources */,
 				9456281F2183929600E9A000 /* Restaurant.swift in Sources */,
 				94562821218393A100E9A000 /* Constants.swift in Sources */,
 				945628282183E23B00E9A000 /* RestaurantCell.swift in Sources */,
 				94853DB52186967800FFFEE1 /* RestaurantMarkerView.swift in Sources */,
-				9456282C2184319E00E9A000 /* TwoLabelCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
